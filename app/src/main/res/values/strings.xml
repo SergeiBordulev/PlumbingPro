@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PlumbingPro</string>
+
+    <!-- Navigation Tabs -->
+    <string name="tab_calculators">Calculators</string>
+    <string name="tab_codes">Codes &amp; Standards</string>
+    <string name="tab_settings">Settings</string>
+
+    <!-- Theme Settings -->
+    <string name="theme_title">Theme</string>
+    <string name="theme_system">System Default</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+
+    <!-- Language Settings -->
+    <string name="language_title">Language</string>
+    <string name="language_system">System Default</string>
+    <string name="language_ru">Русский (Russian)</string>
+    <string name="language_en">English</string>
+    <string name="language_es">Español (Spanish)</string>
+
+    <!-- Unit Settings -->
+    <string name="units_title">Unit System</string>
+    <string name="units_metric">Metric (mm, m, L, bar, °C)</string>
+    <string name="units_imperial">Imperial (inch, ft, gal, PSI, °F)</string>
+
+    <!-- Calculators Titles -->
+    <string name="calc_pipe_volume">Pipe Volume &amp; Water Capacity</string>
+    <string name="calc_pipe_volume_desc">Calculate internal volume, water volume, and total water weight of a pipe.</string>
+
+    <string name="calc_flow_rate">Flow Rate &amp; Velocity</string>
+    <string name="calc_flow_rate_desc">Calculate water velocity and volumetric flow rate through pipes.</string>
+
+    <string name="calc_pipe_sizing">Pipe Sizing by Flow</string>
+    <string name="calc_pipe_sizing_desc">Calculate required minimum internal pipe diameter and standard pipe size based on water flow rate.</string>
+
+    <string name="calc_pipe_slope">Pipe Slope &amp; Fall</string>
+    <string name="calc_pipe_slope_desc">Calculate drop (fall) over distance or required slope percentage for drainage.</string>
+
+    <string name="calc_pressure_drop">Water Pressure Drop</string>
+    <string name="calc_pressure_drop_desc">Estimate friction loss and pressure drop along pipe runs using Hazen-Williams formula.</string>
+
+    <string name="calc_thermal_expansion">Thermal Expansion</string>
+    <string name="calc_thermal_expansion_desc">Calculate linear thermal expansion of pipe materials due to temperature changes.</string>
+
+    <string name="calc_tank_volume">Tank &amp; Heater Capacity</string>
+    <string name="calc_tank_volume_desc">Calculate total water capacity for cylindrical and rectangular storage tanks.</string>
+
+    <string name="calc_fixture_units">Fixture Units (DFU &amp; WSFU)</string>
+    <string name="calc_fixture_units_desc">Calculate total Drainage and Water Supply Fixture Units and recommended pipe size.</string>
+
+    <!-- Common UI Strings -->
+    <string name="calculate">Calculate</string>
+    <string name="reset">Reset</string>
+    <string name="results">Results</string>
+    <string name="select_material">Select Material</string>
+    <string name="select_shape">Select Shape</string>
+
+    <!-- Pipe Volume Inputs & Outputs -->
+    <string name="label_pipe_diameter">Internal Diameter</string>
+    <string name="label_pipe_length">Pipe Length</string>
+    <string name="result_volume_liters">Volume (Liters)</string>
+    <string name="result_volume_gallons">Volume (US Gallons)</string>
+    <string name="result_volume_m3">Volume (m³)</string>
+    <string name="result_water_weight">Water Weight</string>
+
+    <!-- Flow Rate & Sizing Inputs & Outputs -->
+    <string name="label_velocity">Flow Velocity</string>
+    <string name="label_design_velocity">Design Flow Velocity</string>
+    <string name="label_flow_rate">Flow Rate</string>
+    <string name="result_flow_lpm">Flow Rate (L/min)</string>
+    <string name="result_flow_gpm">Flow Rate (GPM)</string>
+    <string name="result_velocity">Velocity</string>
+    <string name="result_calc_diameter">Calculated Inner Diameter</string>
+    <string name="result_recommended_pipe_size">Recommended Pipe Size</string>
+    <string name="velocity_status_optimal">Optimal velocity (within recommended 0.6 – 2.4 m/s limits)</string>
+    <string name="velocity_status_high">High velocity! Risk of pipe noise, erosion &amp; water hammer (&gt; 2.4 m/s)</string>
+    <string name="velocity_status_low">Low velocity! Risk of sediment accumulation (&lt; 0.6 m/s)</string>
+
+    <!-- Slope Inputs & Outputs -->
+    <string name="label_run_distance">Run Distance / Length</string>
+    <string name="label_slope_percent">Slope / Gradient (%)</string>
+    <string name="slope_ratio_quarter">1/4 inch per foot (~2.08%)</string>
+    <string name="slope_ratio_eighth">1/8 inch per foot (~1.04%)</string>
+    <string name="slope_ratio_half">1/2 inch per foot (~4.16%)</string>
+    <string name="result_total_fall">Total Drop / Fall</string>
+    <string name="slope_recommendation_dwv">Standard DWV Slope Recommendation: 1/4 inch per ft (2%) for pipes ≤ 2.5", 1/8 inch per ft (1%) for pipes ≥ 3".</string>
+
+    <!-- Pressure Drop Inputs & Outputs -->
+    <string name="result_pressure_loss_bar">Pressure Loss (bar)</string>
+    <string name="result_pressure_loss_psi">Pressure Loss (PSI)</string>
+    <string name="result_head_loss">Head Loss (meters of H₂O)</string>
+
+    <!-- Thermal Expansion Inputs & Outputs -->
+    <string name="label_temp_initial">Initial Temp (°C / °F)</string>
+    <string name="label_temp_final">Final Temp (°C / °F)</string>
+    <string name="label_temp_delta">Temperature Change ΔT</string>
+    <string name="result_expansion_length">Linear Expansion ΔL</string>
+    <string name="expansion_loop_note">Recommended Expansion Loop arm length: approximately</string>
+
+    <!-- Tank Volume Inputs & Outputs -->
+    <string name="shape_vert_cylinder">Vertical Cylinder</string>
+    <string name="shape_horiz_cylinder">Horizontal Cylinder</string>
+    <string name="shape_rectangular">Rectangular Tank</string>
+    <string name="label_diameter">Diameter</string>
+    <string name="label_height">Height / Depth</string>
+    <string name="label_width">Width</string>
+
+    <!-- Fixture Units Inputs & Outputs -->
+    <string name="fixture_toilet">Water Closet / Toilet</string>
+    <string name="fixture_shower">Shower</string>
+    <string name="fixture_bathtub">Bathtub</string>
+    <string name="fixture_lavatory">Bathroom Sink / Lavatory</string>
+    <string name="fixture_kitchen_sink">Kitchen Sink</string>
+    <string name="fixture_dishwasher">Dishwasher</string>
+    <string name="fixture_washing_machine">Clothes Washer</string>
+
+    <string name="result_total_dfu">Total Drainage Fixture Units (DFU)</string>
+    <string name="result_total_wsfu">Total Water Supply Fixture Units (WSFU)</string>
+    <string name="result_drain_size">Recommended Minimum Drain Pipe Size</string>
+    <string name="result_peak_demand">Estimated Peak Demand (GPM / L/min)</string>
+
+    <!-- Plumbing Codes Reference -->
+    <string name="codes_title">Plumbing Codes &amp; Standards</string>
+    <string name="codes_subtitle">Official Handbooks &amp; Codes Quick Reference</string>
+    <string name="us_codes_title">🇺🇸 United States Plumbing Codes</string>
+    <string name="canada_codes_title">🇨🇦 Canada Plumbing Codes</string>
+
+    <string name="code_ipc_title">IPC - International Plumbing Code</string>
+    <string name="code_ipc_desc">Maintained by ICC (International Code Council). Model code adopted across most US states.</string>
+    <string name="code_ipc_btn">Open Official IPC Guide</string>
+
+    <string name="code_upc_title">UPC - Uniform Plumbing Code</string>
+    <string name="code_upc_desc">Maintained by IAPMO. Widely used in western US states and jurisdictions.</string>
+    <string name="code_upc_btn">Open Official UPC Guide</string>
+
+    <string name="code_npc_title">NPC - National Plumbing Code of Canada</string>
+    <string name="code_npc_desc">Published by National Research Council Canada (NRC). Code model used across Canadian provinces.</string>
+    <string name="code_npc_btn">Open Official Canada NPC Guide</string>
+
+    <string name="code_csa_title">CSA Plumbing Standards &amp; Codes</string>
+    <string name="code_csa_desc">Canadian Standards Association plumbing fixtures, piping materials, and safety standards.</string>
+    <string name="code_csa_btn">Open Official CSA Group Guide</string>
+
+    <string name="quick_ref_title">Plumber Cheat Sheet &amp; Formulas</string>
+    <string name="ref_dwv_slopes">Drainage Pipe Slopes (IPC / UPC):</string>
+    <string name="ref_dwv_slopes_detail">• 2" or smaller: 1/4" per foot (2% gradient)\n• 3" to 6": 1/8" per foot (1% gradient)\n• 8" or larger: 1/16" per foot (0.5% gradient)</string>
+
+    <string name="ref_water_velocity">Water Velocity Limits:</string>
+    <string name="ref_water_velocity_detail">• Cold Water Lines: Max 8 ft/s (2.4 m/s)\n• Hot Water Lines (&gt;140°F/60°C): Max 5 ft/s (1.5 m/s) to prevent erosion-corrosion.</string>
+
+    <string name="ref_pipe_roughness">Hazen-Williams C-Factors:</string>
+    <string name="ref_pipe_roughness_detail">• PEX / CPVC / PVC: C = 150\n• Copper Pipe: C = 140\n• Stainless Steel: C = 150\n• Galvanized Steel: C = 120\n• Cast Iron: C = 100</string>
+
+    <!-- Materials -->
+    <string name="mat_pex">PEX (Cross-linked Polyethylene)</string>
+    <string name="mat_copper">Copper (Type L / M)</string>
+    <string name="mat_pvc">PVC / CPVC</string>
+    <string name="mat_steel">Steel / Iron Pipe</string>
+
+    <string name="about_title">About PlumbingPro</string>
+    <string name="about_version">Version 1.0</string>
+    <string name="about_desc">Professional plumbing calculation tools and codes handbook for plumbers, engineers, and DIYers.</string>
+</resources>

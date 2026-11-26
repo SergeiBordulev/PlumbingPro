@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PlumbingPro</string>
+
+    <!-- Navigation Tabs -->
+    <string name="tab_calculators">Калькуляторы</string>
+    <string name="tab_codes">Справочник кодов</string>
+    <string name="tab_settings">Настройки</string>
+
+    <!-- Theme Settings -->
+    <string name="theme_title">Тема оформления</string>
+    <string name="theme_system">Системная</string>
+    <string name="theme_light">Светлая</string>
+    <string name="theme_dark">Темная</string>
+
+    <!-- Language Settings -->
+    <string name="language_title">Язык интерфейса</string>
+    <string name="language_system">Системный</string>
+    <string name="language_ru">Русский</string>
+    <string name="language_en">English</string>
+    <string name="language_es">Español</string>
+
+    <!-- Unit Settings -->
+    <string name="units_title">Система измерений</string>
+    <string name="units_metric">Метрическая (мм, м, л, бар, °C)</string>
+    <string name="units_imperial">Имперская (дюйм, фут, гал, PSI, °F)</string>
+
+    <!-- Calculators Titles -->
+    <string name="calc_pipe_volume">Объем трубы и вместимость воды</string>
+    <string name="calc_pipe_volume_desc">Расчет внутреннего объема трубы, объема воды и веса заправленной воды.</string>
+
+    <string name="calc_flow_rate">Расход воды и скорость потока</string>
+    <string name="calc_flow_rate_desc">Расчет скорости движения воды и объемного расхода через трубопровод.</string>
+
+    <string name="calc_pipe_sizing">Подбор диаметра трубы</string>
+    <string name="calc_pipe_sizing_desc">Расчет минимального внутреннего диаметра трубы по расходу воды и расчетной скорости потока.</string>
+
+    <string name="calc_pipe_slope">Уклон трубы и градиент</string>
+    <string name="calc_pipe_slope_desc">Расчет перепада высот (падения) по длине и требуемого процента уклона для канализации.</string>
+
+    <string name="calc_pressure_drop">Падение давления в трубе</string>
+    <string name="calc_pressure_drop_desc">Расчет потерь напора на трение по длине трубы по формуле Хазена-Вильямса.</string>
+
+    <string name="calc_thermal_expansion">Тепловое расширение труб</string>
+    <string name="calc_thermal_expansion_desc">Расчет линейного удлинения труб при изменении температуры рабочей среды.</string>
+
+    <string name="calc_tank_volume">Объем бака и водонагревателя</string>
+    <string name="calc_tank_volume_desc">Расчет полной вместимости цилиндрических и прямоугольных накопительных баков.</string>
+
+    <string name="calc_fixture_units">Расчет сантехприборов (DFU &amp; WSFU)</string>
+    <string name="calc_fixture_units_desc">Расчет эквивалентных единиц приборов канализации (DFU) и водоснабжения (WSFU).</string>
+
+    <!-- Common UI Strings -->
+    <string name="calculate">Рассчитать</string>
+    <string name="reset">Сброс</string>
+    <string name="results">Результаты</string>
+    <string name="select_material">Выберите материал</string>
+    <string name="select_shape">Выберите форму</string>
+
+    <!-- Pipe Volume Inputs & Outputs -->
+    <string name="label_pipe_diameter">Внутренний диаметр</string>
+    <string name="label_pipe_length">Длина трубы</string>
+    <string name="result_volume_liters">Объем (Литры)</string>
+    <string name="result_volume_gallons">Объем (Галлоны США)</string>
+    <string name="result_volume_m3">Объем (м³)</string>
+    <string name="result_water_weight">Масса воды</string>
+
+    <!-- Flow Rate & Sizing Inputs & Outputs -->
+    <string name="label_velocity">Скорость потока</string>
+    <string name="label_design_velocity">Расчетная скорость потока</string>
+    <string name="label_flow_rate">Расход воды</string>
+    <string name="result_flow_lpm">Расход (л/мин)</string>
+    <string name="result_flow_gpm">Расход (GPM / гал/мин)</string>
+    <string name="result_velocity">Скорость</string>
+    <string name="result_calc_diameter">Расчетный внутренний диаметр</string>
+    <string name="result_recommended_pipe_size">Рекомендуемый размер трубы</string>
+    <string name="velocity_status_optimal">Оптимальная скорость потока (в норме 0.6 – 2.4 м/с)</string>
+    <string name="velocity_status_high">Высокая скорость! Риск шума, кавитации и гидроудара (&gt; 2.4 м/с)</string>
+    <string name="velocity_status_low">Низкая скорость! Риск заиливания и отложений (&lt; 0.6 м/с)</string>
+
+    <!-- Slope Inputs & Outputs -->
+    <string name="label_run_distance">Длина участка / Расстояние</string>
+    <string name="label_slope_percent">Уклон / Градиент (%)</string>
+    <string name="slope_ratio_quarter">1/4 дюйма на фут (~2.08%)</string>
+    <string name="slope_ratio_eighth">1/8 дюйма на фут (~1.04%)</string>
+    <string name="slope_ratio_half">1/2 дюйма на фут (~4.16%)</string>
+    <string name="result_total_fall">Полный перепад / Падение</string>
+    <string name="slope_recommendation_dwv">Стандарт нормы уклона DWV: 2% (2 см/м) для труб ≤ 50мм (2"), 1% (1 см/м) для труб ≥ 75мм (3").</string>
+
+    <!-- Pressure Drop Inputs & Outputs -->
+    <string name="result_pressure_loss_bar">Потеря давления (бар)</string>
+    <string name="result_pressure_loss_psi">Потеря давления (PSI)</string>
+    <string name="result_head_loss">Потеря напора (метры вод. ст.)</string>
+
+    <!-- Thermal Expansion Inputs & Outputs -->
+    <string name="label_temp_initial">Начальная темп. (°C / °F)</string>
+    <string name="label_temp_final">Конечная темп. (°C / °F)</string>
+    <string name="label_temp_delta">Разница температур ΔT</string>
+    <string name="result_expansion_length">Удлинение трубы ΔL</string>
+    <string name="expansion_loop_note">Рекомендуемое плечо компенсатора: около</string>
+
+    <!-- Tank Volume Inputs & Outputs -->
+    <string name="shape_vert_cylinder">Вертикальный цилиндр</string>
+    <string name="shape_horiz_cylinder">Горизонтальный цилиндр</string>
+    <string name="shape_rectangular">Прямоугольная емкость</string>
+    <string name="label_diameter">Диаметр</string>
+    <string name="label_height">Высота / Глубина</string>
+    <string name="label_width">Ширина</string>
+
+    <!-- Fixture Units Inputs & Outputs -->
+    <string name="fixture_toilet">Унитаз / Унитаз со смывным бачком</string>
+    <string name="fixture_shower">Душевая кабина / Душ</string>
+    <string name="fixture_bathtub">Ванна</string>
+    <string name="fixture_lavatory">Умывальник / Раковина</string>
+    <string name="fixture_kitchen_sink">Кухонная мойка</string>
+    <string name="fixture_dishwasher">Посудомоечная машина</string>
+    <string name="fixture_washing_machine">Стиральная машина</string>
+
+    <string name="result_total_dfu">Сумма приборных единиц стока (DFU)</string>
+    <string name="result_total_wsfu">Сумма приборных единиц водопровода (WSFU)</string>
+    <string name="result_drain_size">Рекомендуемый мин. диаметр слива</string>
+    <string name="result_peak_demand">Расчетный пиковый расход (л/мин / GPM)</string>
+
+    <!-- Plumbing Codes Reference -->
+    <string name="codes_title">Справочник сантехнических кодексов</string>
+    <string name="codes_subtitle">Официальные руководства США и Канады и таблица норм</string>
+    <string name="us_codes_title">🇺🇸 Сантехнические Кодексы США</string>
+    <string name="canada_codes_title">🇨🇦 Сантехнические Кодексы Канады</string>
+
+    <string name="code_ipc_title">IPC - Международный сантехнический кодекс США</string>
+    <string name="code_ipc_desc">Поддерживается ICC (International Code Council). Основной кодекс, принятый большинством штатов США.</string>
+    <string name="code_ipc_btn">Открыть официальный справочник IPC</string>
+
+    <string name="code_upc_title">UPC - Единый сантехнический кодекс США</string>
+    <string name="code_upc_desc">Поддерживается IAPMO. Широко используется в западных штатах США и муниципалитетах.</string>
+    <string name="code_upc_btn">Открыть официальный справочник UPC</string>
+
+    <string name="code_npc_title">NPC - Национальный сантехнический кодекс Канады</string>
+    <string name="code_npc_desc">Издается National Research Council Canada (NRC). Базовый стандарт для всех провинций Канады.</string>
+    <string name="code_npc_btn">Открыть официальный справочник Канады NPC</string>
+
+    <string name="code_csa_title">Стандарты сантехники CSA (Канада)</string>
+    <string name="code_csa_desc">Стандарты Canadian Standards Association по сантехническому оборудованию и трубам.</string>
+    <string name="code_csa_btn">Открыть официальный справочник CSA Group</string>
+
+    <string name="quick_ref_title">Шпаргалка сантехника и нормативные таблицы</string>
+    <string name="ref_dwv_slopes">Нормы уклонов канализации (IPC / UPC):</string>
+    <string name="ref_dwv_slopes_detail">• Трубы ≤ 50 мм (2"): уклон 2% (2 см на 1 м)\n• Трубы 75 – 150 мм (3"-6"): уклон 1% (1 см на 1 м)\n• Трубы ≥ 200 мм (8"): уклон 0.5% (0.5 см на 1 м)</string>
+
+    <string name="ref_water_velocity">Допустимые скорости потока воды:</string>
+    <string name="ref_water_velocity_detail">• Холодное водоснабжение: макс 2.4 м/с (8 ft/s)\n• Горячее водоснабжение (&gt;60°C): макс 1.5 м/с (5 ft/s) для предотвращения эрозии труб.</string>
+
+    <string name="ref_pipe_roughness">Коэффициент шершавости C (Хазен-Вильямс):</string>
+    <string name="ref_pipe_roughness_detail">• Сшитый полиэтилен (PEX) / ПВХ: C = 150\n• Медные трубы: C = 140\n• Нержавеющая сталь: C = 150\n• Сталь оцинкованная: C = 120\n• Чугун: C = 100</string>
+
+    <!-- Materials -->
+    <string name="mat_pex">PEX (Сшитый полиэтилен)</string>
+    <string name="mat_copper">Медь (Type L / M)</string>
+    <string name="mat_pvc">ПВХ / ХПВХ (PVC/CPVC)</string>
+    <string name="mat_steel">Сталь / Чугун</string>
+
+    <string name="about_title">О приложении PlumbingPro</string>
+    <string name="about_version">Версия 1.0</string>
+    <string name="about_desc">Профессиональный калькулятор и справочник нормативов для сантехников, инженеров и мастеров.</string>
+</resources>

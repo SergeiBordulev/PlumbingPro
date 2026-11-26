@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.PlumbingPro" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/plumbing_blue_primary</item>
+        <item name="colorPrimaryVariant">@color/plumbing_blue_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/plumbing_cyan_accent</item>
+        <item name="colorSecondaryVariant">@color/plumbing_accent_variant</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/plumbing_blue_dark</item>
+        <item name="android:windowBackground">@color/background_light</item>
+    </style>
+</resources>

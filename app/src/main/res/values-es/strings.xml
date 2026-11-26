@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PlumbingPro</string>
+
+    <!-- Navigation Tabs -->
+    <string name="tab_calculators">Calculadoras</string>
+    <string name="tab_codes">Códigos y Normas</string>
+    <string name="tab_settings">Configuración</string>
+
+    <!-- Theme Settings -->
+    <string name="theme_title">Tema de interfaz</string>
+    <string name="theme_system">Predeterminado del sistema</string>
+    <string name="theme_light">Claro</string>
+    <string name="theme_dark">Oscuro</string>
+
+    <!-- Language Settings -->
+    <string name="language_title">Idioma</string>
+    <string name="language_system">Predeterminado del sistema</string>
+    <string name="language_ru">Русский (Ruso)</string>
+    <string name="language_en">English (Inglés)</string>
+    <string name="language_es">Español</string>
+
+    <!-- Unit Settings -->
+    <string name="units_title">Sistema de unidades</string>
+    <string name="units_metric">Métrico (mm, m, L, bar, °C)</string>
+    <string name="units_imperial">Imperial (pulgada, ft, gal, PSI, °F)</string>
+
+    <!-- Calculators Titles -->
+    <string name="calc_pipe_volume">Volumen y capacidad de tubería</string>
+    <string name="calc_pipe_volume_desc">Calcula el volumen interno, volumen de agua y peso total del agua en una tubería.</string>
+
+    <string name="calc_flow_rate">Caudal y velocidad del flujo</string>
+    <string name="calc_flow_rate_desc">Calcula la velocidad del agua y el caudal volumétrico en tuberías.</string>
+
+    <string name="calc_pipe_sizing">Selección de diámetro de tubería</string>
+    <string name="calc_pipe_sizing_desc">Calcula el diámetro interno mínimo de tubería y el tamaño recomendado según el caudal.</string>
+
+    <string name="calc_pipe_slope">Pendiente y caída de tubería</string>
+    <string name="calc_pipe_slope_desc">Calcula la caída (desnivel) o el porcentaje de pendiente requerido para drenaje.</string>
+
+    <string name="calc_pressure_drop">Caída de presión en tuberías</string>
+    <string name="calc_pressure_drop_desc">Estima las pérdidas por fricción y caída de presión mediante la fórmula Hazen-Williams.</string>
+
+    <string name="calc_thermal_expansion">Expansión térmica de tuberías</string>
+    <string name="calc_thermal_expansion_desc">Calcula la dilatación térmica lineal de los materiales debido a cambios de temperatura.</string>
+
+    <string name="calc_tank_volume">Capacidad del tanque y calentador</string>
+    <string name="calc_tank_volume_desc">Calcula la capacidad de agua para tanques de almacenamiento cilíndricos y rectangulares.</string>
+
+    <string name="calc_fixture_units">Unidades de fijación (DFU y WSFU)</string>
+    <string name="calc_fixture_units_desc">Calcula el total de Unidades de Fijación de Drenaje y Suministro de Agua y el diámetro de tubería recomendado.</string>
+
+    <!-- Common UI Strings -->
+    <string name="calculate">Calcular</string>
+    <string name="reset">Restablecer</string>
+    <string name="results">Resultados</string>
+    <string name="select_material">Seleccionar material</string>
+    <string name="select_shape">Seleccionar forma</string>
+
+    <!-- Pipe Volume Inputs & Outputs -->
+    <string name="label_pipe_diameter">Diámetro interno</string>
+    <string name="label_pipe_length">Longitud de tubería</string>
+    <string name="result_volume_liters">Volumen (Litros)</string>
+    <string name="result_volume_gallons">Volumen (Galones EE.UU.)</string>
+    <string name="result_volume_m3">Volumen (m³)</string>
+    <string name="result_water_weight">Peso del agua</string>
+
+    <!-- Flow Rate & Sizing Inputs & Outputs -->
+    <string name="label_velocity">Velocidad del flujo</string>
+    <string name="label_design_velocity">Velocidad de diseño del flujo</string>
+    <string name="label_flow_rate">Caudal</string>
+    <string name="result_flow_lpm">Caudal (L/min)</string>
+    <string name="result_flow_gpm">Caudal (GPM)</string>
+    <string name="result_velocity">Velocidad</string>
+    <string name="result_calc_diameter">Diámetro interno calculado</string>
+    <string name="result_recommended_pipe_size">Tamaño de tubería recomendado</string>
+    <string name="velocity_status_optimal">Velocidad óptima (dentro del rango recomendado 0.6 – 2.4 m/s)</string>
+    <string name="velocity_status_high">¡Velocidad alta! Riesgo de ruido, erosión y golpe de ariete (&gt; 2.4 m/s)</string>
+    <string name="velocity_status_low">¡Velocidad baja! Riesgo de acumulación de sedimentos (&lt; 0.6 m/s)</string>
+
+    <!-- Slope Inputs & Outputs -->
+    <string name="label_run_distance">Distancia / Longitud del tramo</string>
+    <string name="label_slope_percent">Pendiente / Gradiente (%)</string>
+    <string name="slope_ratio_quarter">1/4 pulgada por pie (~2.08%)</string>
+    <string name="slope_ratio_eighth">1/8 pulgada por pie (~1.04%)</string>
+    <string name="slope_ratio_half">1/2 pulgada por pie (~4.16%)</string>
+    <string name="result_total_fall">Desnivel total / Caída</string>
+    <string name="slope_recommendation_dwv">Recomendación estándar de pendiente DWV: 2% para tuberías ≤ 2", 1% para tuberías ≥ 3".</string>
+
+    <!-- Pressure Drop Inputs & Outputs -->
+    <string name="result_pressure_loss_bar">Pérdida de presión (bar)</string>
+    <string name="result_pressure_loss_psi">Pérdida de presión (PSI)</string>
+    <string name="result_head_loss">Pérdida de carga (metros de agua)</string>
+
+    <!-- Thermal Expansion Inputs & Outputs -->
+    <string name="label_temp_initial">Temp. inicial (°C / °F)</string>
+    <string name="label_temp_final">Temp. final (°C / °F)</string>
+    <string name="label_temp_delta">Diferencia de temp. ΔT</string>
+    <string name="result_expansion_length">Expansión lineal ΔL</string>
+    <string name="expansion_loop_note">Longitud recomendada del brazo de expansión: aprox.</string>
+
+    <!-- Tank Volume Inputs & Outputs -->
+    <string name="shape_vert_cylinder">Cilindro vertical</string>
+    <string name="shape_horiz_cylinder">Cilindro horizontal</string>
+    <string name="shape_rectangular">Tanque rectangular</string>
+    <string name="label_diameter">Diámetro</string>
+    <string name="label_height">Altura / Profundidad</string>
+    <string name="label_width">Ancho</string>
+
+    <!-- Fixture Units Inputs & Outputs -->
+    <string name="fixture_toilet">Inodoro / Retrete</string>
+    <string name="fixture_shower">Ducha</string>
+    <string name="fixture_bathtub">Bañera</string>
+    <string name="fixture_lavatory">Lavabo / Lavamanos</string>
+    <string name="fixture_kitchen_sink">Fregadero de cocina</string>
+    <string name="fixture_dishwasher">Lavavajillas</string>
+    <string name="fixture_washing_machine">Lavadora</string>
+
+    <string name="result_total_dfu">Unidades de Fijación de Drenaje (DFU)</string>
+    <string name="result_total_wsfu">Unidades de Fijación de Suministro (WSFU)</string>
+    <string name="result_drain_size">Diámetro de drenaje mínimo recomendado</string>
+    <string name="result_peak_demand">Demanda máxima estimada (L/min / GPM)</string>
+
+    <!-- Plumbing Codes Reference -->
+    <string name="codes_title">Códigos y Normas de Fontanería</string>
+    <string name="codes_subtitle">Manuales oficiales y guía rápida de consulta</string>
+    <string name="us_codes_title">🇺🇸 Códigos de Fontanería de EE.UU.</string>
+    <string name="canada_codes_title">🇨🇦 Códigos de Fontanería de Canadá</string>
+
+    <string name="code_ipc_title">IPC - Código Internacional de Fontanería (EE.UU.)</string>
+    <string name="code_ipc_desc">Mantenido por ICC (International Code Council). Código modelo adoptado en la mayoría de los estados de EE.UU.</string>
+    <string name="code_ipc_btn">Abrir guía oficial IPC</string>
+
+    <string name="code_upc_title">UPC - Código Uniforme de Fontanería (EE.UU.)</string>
+    <string name="code_upc_desc">Mantenido por IAPMO. Ampliamente utilizado en estados y jurisdicciones del oeste de EE.UU.</string>
+    <string name="code_upc_btn">Abrir guía oficial UPC</string>
+
+    <string name="code_npc_title">NPC - Código Nacional de Fontanería de Canadá</string>
+    <string name="code_npc_desc">Publicado por el Conseil national de recherches Canada (NRC). Modelo de código utilizado en las provincias canadienses.</string>
+    <string name="code_npc_btn">Abrir guía oficial NPC Canadá</string>
+
+    <string name="code_csa_title">Normas de Fontanería CSA (Canadá)</string>
+    <string name="code_csa_desc">Estándares de la Asociación Canadiense de Normalización para accesorios y tuberías de fontanería.</string>
+    <string name="code_csa_btn">Abrir guía oficial CSA Group</string>
+
+    <string name="quick_ref_title">Guía rápida y tablas normativas</string>
+    <string name="ref_dwv_slopes">Pendientes de tubería de drenaje (IPC / UPC):</string>
+    <string name="ref_dwv_slopes_detail">• 2" o menor: 1/4" por pie (pendiente 2%)\n• 3" a 6": 1/8" por pie (pendiente 1%)\n• 8" o mayor: 1/16" por pie (pendiente 0.5%)</string>
+
+    <string name="ref_water_velocity">Límites de velocidad del agua:</string>
+    <string name="ref_water_velocity_detail">• Tuberías de agua fría: Máx. 8 ft/s (2.4 m/s)\n• Tuberías de agua caliente (&gt;60°C): Máx. 5 ft/s (1.5 m/s) para evitar erosión-corrosión.</string>
+
+    <string name="ref_pipe_roughness">Coeficiente de rugosidad C (Hazen-Williams):</string>
+    <string name="ref_pipe_roughness_detail">• PEX / CPVC / PVC: C = 150\n• Tubería de cobre: C = 140\n• Acero inoxidable: C = 150\n• Acero galvanizado: C = 120\n• Hierro fundido: C = 100</string>
+
+    <!-- Materials -->
+    <string name="mat_pex">PEX (Polietileno reticulado)</string>
+    <string name="mat_copper">Cobre (Tipo L / M)</string>
+    <string name="mat_pvc">PVC / CPVC</string>
+    <string name="mat_steel">Acero / Hierro fundido</string>
+
+    <string name="about_title">Acerca de PlumbingPro</string>
+    <string name="about_version">Versión 1.0</string>
+    <string name="about_desc">Herramientas profesionales de cálculo y guía de códigos para fontaneros, ingenieros y aficionados.</string>
+</resources>
