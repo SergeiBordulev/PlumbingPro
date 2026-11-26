@@ -5,80 +5,23 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <!-- Top Chips for Selector -->
-    <HorizontalScrollView
+    <!-- Dropdown Menu for Calculator Selector -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutCalculatorDropdown"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:clipToPadding="false"
-        android:paddingHorizontal="12dp"
-        android:paddingVertical="8dp"
-        android:scrollbars="none">
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="4dp"
+        android:hint="@string/tab_calculators">
 
-        <com.google.android.material.chip.ChipGroup
-            android:id="@+id/chipGroupCalculators"
-            android:layout_width="wrap_content"
+        <AutoCompleteTextView
+            android:id="@+id/spinnerCalculatorSelector"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:singleLine="true"
-            app:singleSelection="true">
-
-            <com.google.android.material.chip.Chip
-                android:id="@+id/chipPipeVolume"
-                style="@style/Widget.MaterialComponents.Chip.Choice"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:checked="true"
-                android:text="@string/calc_pipe_volume" />
-
-            <com.google.android.material.chip.Chip
-                android:id="@+id/chipFlowRate"
-                style="@style/Widget.MaterialComponents.Chip.Choice"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/calc_flow_rate" />
-
-            <com.google.android.material.chip.Chip
-                android:id="@+id/chipPipeSizing"
-                style="@style/Widget.MaterialComponents.Chip.Choice"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/calc_pipe_sizing" />
-
-            <com.google.android.material.chip.Chip
-                android:id="@+id/chipPipeSlope"
-                style="@style/Widget.MaterialComponents.Chip.Choice"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/calc_pipe_slope" />
-
-            <com.google.android.material.chip.Chip
-                android:id="@+id/chipPressureDrop"
-                style="@style/Widget.MaterialComponents.Chip.Choice"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/calc_pressure_drop" />
-
-            <com.google.android.material.chip.Chip
-                android:id="@+id/chipThermalExpansion"
-                style="@style/Widget.MaterialComponents.Chip.Choice"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/calc_thermal_expansion" />
-
-            <com.google.android.material.chip.Chip
-                android:id="@+id/chipTankVolume"
-                style="@style/Widget.MaterialComponents.Chip.Choice"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/calc_tank_volume" />
-
-            <com.google.android.material.chip.Chip
-                android:id="@+id/chipFixtureUnits"
-                style="@style/Widget.MaterialComponents.Chip.Choice"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/calc_fixture_units" />
-        </com.google.android.material.chip.ChipGroup>
-    </HorizontalScrollView>
+            android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <ScrollView
         android:layout_width="match_parent"

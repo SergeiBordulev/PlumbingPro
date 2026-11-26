@@ -33,26 +33,44 @@ class CalculatorsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         prefs = PreferencesManager(requireContext())
 
-        setupChipSelector()
+        setupDropdownSelector()
         setupSpinners()
         setupCalculators()
         updateUnitHints()
     }
 
-    private fun setupChipSelector() {
-        binding.chipGroupCalculators.setOnCheckedStateChangeListener { _, checkedIds ->
-            if (checkedIds.isEmpty()) return@setOnCheckedStateChangeListener
-            val id = checkedIds[0]
+    private fun setupDropdownSelector() {
+        val calculatorOptions = arrayOf(
+            getString(R.string.calc_pipe_volume),
+            getString(R.string.calc_flow_rate),
+            getString(R.string.calc_pipe_sizing),
+            getString(R.string.calc_pipe_slope),
+            getString(R.string.calc_pressure_drop),
+            getString(R.string.calc_thermal_expansion),
+            getString(R.string.calc_tank_volume),
+            getString(R.string.calc_fixture_units)
+        )
 
-            binding.containerPipeVolume.visibility = if (id == R.id.chipPipeVolume) View.VISIBLE else View.GONE
-            binding.containerFlowRate.visibility = if (id == R.id.chipFlowRate) View.VISIBLE else View.GONE
-            binding.containerPipeSizing.visibility = if (id == R.id.chipPipeSizing) View.VISIBLE else View.GONE
-            binding.containerPipeSlope.visibility = if (id == R.id.chipPipeSlope) View.VISIBLE else View.GONE
-            binding.containerPressureDrop.visibility = if (id == R.id.chipPressureDrop) View.VISIBLE else View.GONE
-            binding.containerThermalExpansion.visibility = if (id == R.id.chipThermalExpansion) View.VISIBLE else View.GONE
-            binding.containerTankVolume.visibility = if (id == R.id.chipTankVolume) View.VISIBLE else View.GONE
-            binding.containerFixtureUnits.visibility = if (id == R.id.chipFixtureUnits) View.VISIBLE else View.GONE
+        val adapter = ArrayAdapter(requireContext(), android.R.layout.simple_dropdown_item_1line, calculatorOptions)
+        binding.spinnerCalculatorSelector.setAdapter(adapter)
+
+        binding.spinnerCalculatorSelector.setText(calculatorOptions[0], false)
+        showCalculatorContainer(0)
+
+        binding.spinnerCalculatorSelector.setOnItemClickListener { _, _, position, _ ->
+            showCalculatorContainer(position)
         }
+    }
+
+    private fun showCalculatorContainer(position: Int) {
+        binding.containerPipeVolume.visibility = if (position == 0) View.VISIBLE else View.GONE
+        binding.containerFlowRate.visibility = if (position == 1) View.VISIBLE else View.GONE
+        binding.containerPipeSizing.visibility = if (position == 2) View.VISIBLE else View.GONE
+        binding.containerPipeSlope.visibility = if (position == 3) View.VISIBLE else View.GONE
+        binding.containerPressureDrop.visibility = if (position == 4) View.VISIBLE else View.GONE
+        binding.containerThermalExpansion.visibility = if (position == 5) View.VISIBLE else View.GONE
+        binding.containerTankVolume.visibility = if (position == 6) View.VISIBLE else View.GONE
+        binding.containerFixtureUnits.visibility = if (position == 7) View.VISIBLE else View.GONE
     }
 
     private fun updateUnitHints() {
